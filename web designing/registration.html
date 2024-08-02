@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: cyan;
+      }
+        .container{
+            background-color:cyan;
+        }
+        
+       a:hover.btn{
+        
+        background: yellow;
+       }
+       .btn{
+       
+        background-color: black;
+            color: aliceblue;
+            border-radius: 15px;
+            padding-left: 10px;
+            margin-left: 40px;
+            height: 50px;
+            width:80px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       
+    </style>
+</head>
+<body>
+  
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <br>
+      <br>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <br>
+      <br>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <br>
+      <br>
+      <div class="form-group">
+        <label for="conform password">conform Password:</label>
+        <input type="password" class="form-control" id="conform" name="conform password" required>
+      </div>
+      <br>
+      <br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var form = document.getElementById('registrationForm');
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      }, false);
+    })();
+  </script>
+
+</body>
+</html>

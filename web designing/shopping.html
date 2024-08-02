@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+       body
+        {
+            font-family: Arial, sans-serif;
+            background-image:url(online-shopping-4236450.jpg);
+            background-repeat:no-repeat;
+            background-image: -webkit-image-set(red);
+            background-size: cover;
+            background-attachment: fixed;
+        } 
+        footer{
+            bottom: 0%;
+        }
+    .main-letter{
+        /* font-family: "Playwrite AU SA", cursive; */
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        left: 15%;
+        color: white;
+        letter-spacing: 20px;
+        top: 20%;
+        font-size: 150px;
+        position: absolute;
+        font-style: normal;
+        
+    }
+    /* .main-letter
+{
+    letter-spacing: 20px;
+    background-image: url(sky.jpg);
+    
+    overflow:hidden;
+    background-size:cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}   */
+    .secondary-letter{
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        top: 51%;
+        left: 30%;
+        letter-spacing: 15px;
+        position: absolute;
+        font-style: normal;
+    }
+
+    .head{
+        font-family: "Playwrite AU SA", cursive;
+        font-optical-sizing: auto;
+        font-weight: 20px;
+        left: 45%;
+        position: absolute;
+        font-style: normal;
+    }
+  
+</style>
+</head>
+<body>
+    <header>
+        <h1 align="center" class="head">Amazcart</h1>
+        <nav>
+            <ul>
+                <form action="https://www.google.com/search" method="get">
+            <li class="li"><input  type="search" placeholder="search" ></li>
+            <button type="submit"><img src="search.png" class="search"></a></button>
+            </form>
+            <button><a href="#" onclick="menu()"><img src="menu.png" class="menu"></a></button>
+            <img src="dark.png" id="dark">
+            </ul>
+        </nav>
+            <ul class="sidebar">
+               <li class="li2"> <a href="#" onclick="back()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <a href="shopping.html">home</a>
+                <a href="product page.html">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </ul>
+    </header>
+    <main>
+        <p>
+            <!-- <big> <h1>offers <mark>50%</mark> on full hand t-shirts</h1></big> 
+            <big><h2>exclusive offers on checked shirts</h2></big>
+            <big><h3>don't miss this exclusive offers</h3></big> -->
+            <h1 class="main-letter">summer sale</h1>
+            <h3 class="secondary-letter">save upto25% sitewide</h3>
+        </p>
+        <div class="p1">
+            <p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Amazcart</p>
+    </footer>
+    <script>
+        function menu()
+        {
+           const menu =document.querySelector('.sidebar') 
+           menu.style.display='flex'
+        }
+        function back()
+        {
+           const menu =document.querySelector('.sidebar') 
+           menu.style.display='none'
+        }
+        var dark=document.getElementById("dark");
+       dark.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            dark.src="light.png";
+        }
+        else{
+            dark.src ="dark.png";
+        }
+       }
+    </script>
+</body>
+</html>

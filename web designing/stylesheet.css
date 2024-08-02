@@ -1,0 +1,107 @@
+.mainbox1{
+	border-style: ;
+	width: ;
+	height: ;
+	border-color: black;
+	display: grid;
+	grid-template-areas: "h1 h2";
+	grid-gap: 10px;
+
+
+}
+.para1{
+	margin-left: 10px;
+	font-size: 25px;
+	grid-area: h1;
+}
+.image1{
+	grid-area: h2;
+	margin-top: 15px;
+	margin-right: 1000px;
+
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+
+}
+
+.mainbox2{
+	display: grid;
+	grid-template-areas: "box1 box2 box3" "box4 box5 box6";
+	text-align: left;
+	width:140vh ;
+	height: 50vh;
+	color: white;
+	border-style: solid;
+    padding-right: 20vh;
+    padding-left: 15px;
+
+
+}
+.box1{
+  grid-area: box1;
+  border-style: solid;
+  width: 145px;
+  height: 100px;
+  border-color: white;
+  font-size: 15px;
+  grid-gap: 5vh;
+  color: black;
+  
+}
+
+.box2{
+	grid-area: box2;
+	border-style: solid;
+    width: 145px;
+    height: 100px;
+    border-color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: left;
+    color: black;
+    
+   
+}
+
+.box3{
+	grid-area: box3;
+	border-style: solid;
+    width: 145px;
+    height: 100px;
+    border-color: white;
+    font-size: 15px;
+    margin-right: 250px;
+    text-align: left;
+    color: black;
+
+    
+}
+
+.box4{
+	grid-area: box4;
+
+}
+
+.box5{
+	grid-area: box5;
+		
+}
+
+.box6{
+	grid-area: box6;
+			
+}
+.para2{
+	font-family: times new roman;
+	border-style: dotted;
+	width: 20vh;
+	margin-left: 30vh;
+	text-align: center;
+}
+
+.container{
+	font-size: 15px;
+	margin: 10px;
+		
+}

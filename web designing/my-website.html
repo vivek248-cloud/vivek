@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: var(--primary-color);
+        }
+    header{
+    background-color:var(--primary-color
+    );
+    color: var(--secondory-color);
+    height:7em;
+    width: fit-content;
+    position:fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    }
+ul a{
+    font-size: larger;
+    }
+ .div1{
+    transform: translateY(-35px);
+    border-radius: 50%;
+    top: 9%;
+    width: min-content;
+    overflow: hidden;
+    position: absolute;
+    }
+ .div1 img{
+    height: 255px;
+    width: 255px;
+ }
+article h1{
+    font-size: xx-large;
+    font-weight:bold;
+    color:var(--secondory-color);
+    display:flex;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+h2{
+    background-color: cadetblue;
+    left: 20%;
+    top: 28%;
+    position: absolute;
+}
+article h3{
+    left:20%;
+    top: 37%;
+    font-size: x-large;
+    position:absolute;
+    color: var(--secondory-color);
+    text-decoration:underline;
+}
+.div2{
+    left: 20%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
+    font-optical-sizing: auto;
+    top: 42%;
+    position: absolute;
+    width:50%;
+    height: auto;   
+    overflow: hidden;
+}
+
+ul a:hover {
+    cursor:pointer;
+    /* font-size: 500px; */
+    /* color:white; */
+    
+
+} 
+
+/* .home
+{
+    font-size: 2000%;
+    position:fixed;
+    top: 47%;
+    left: 65%;
+    height:52%;
+    transform: translate(-40%,-50%);
+    letter-spacing: 20px;
+    background-image: url(moon.jpg);
+    overflow:visible;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}  */
+nav ul button{
+    border: none;
+    background-color: transparent;
+}
+.sidebar 
+{
+    position: fixed;
+    top: 1.0%;
+    right:2px;    
+    z-index: 999;
+    height:95vh;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.363);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+}
+.li2
+{
+   display: flex;
+   width: 100%;
+   justify-self:flex-start;
+   top: 2%;
+   left: 75%;
+   position: absolute;
+   /*justify-content:center; */
+   }  
+ul a{
+    color:var(--secondory-color);
+    text-decoration: none;
+    padding: 0px 20px;
+    height: 20%;
+    width: 40%;
+}
+    p{
+        color:var(--secondory-color);
+        font-size: large;
+    }
+    button
+    {
+        font-size: x-large;
+        color:white;
+    }
+:root{
+    --primary-color:rgb(220, 220, 220);
+    --secondory-color:black;
+}
+.dark-theme{
+    --primary-color:black;
+    --secondory-color:white;
+}
+   
+.change
+{
+    background-color: black;
+    color:var(--secondory-color);
+    right:10%;
+    top:10%;
+    position: absolute;
+}
+.ch{
+    background-color: black;
+    /* color: #794949; */
+    right:20%;
+    top: 10%;
+    position: absolute;
+}
+#dark{
+    height: 20px;
+    width: auto;
+    right:9%;
+    top: 19%;
+    position: absolute;
+    cursor: pointer;
+}
+.menu
+{
+    height: 25px;
+    width: auto;
+    right:2%;
+    top: 18%;
+    position: absolute;
+}
+.close{
+    height: 25px;
+    width: auto;
+    background-color: yellow;
+}
+h3{
+    right:13%;
+    top: 1%;
+    position: absolute;
+}
+.box
+{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.box img{
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s;
+}
+.back-img{
+    width: 100%;
+}
+.box:hover .back-img{
+    bottom: 40px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- <button><a>Home</a></button>
+                <button><a>About</a></button>
+                <button><a>Project</a></button> -->
+                <button><a href="#" onclick="menu()"><img src="menu.png" class="menu"></a></button>
+                <h3>theme</h3><img src="dark.png" id="dark">
+                
+            </ul>
+        </nav>
+            <ul class="sidebar">
+                <li class="li2"> <a href="#" onclick="back()"><img src="close.png" class="close"></a></li>
+                 <a href="#"">Home</a>
+                 <a href="#">About</a>
+                 <a href="#">Project</a>
+                </ul>
+        </header>
+    <main>
+        <p class="home">
+            home</p>
+        <div class="div1">
+            <img src="Photo.jpg">
+        </div>
+        <article>
+            <h1>Hi,I'm VIVEK . J</h1>
+            <br>
+            <h2>full-stack developer</h2>
+        </article>
+        <article>
+            <h3>
+                about me:
+            </h3>
+            <div class="div2">
+            <p>  Iam a full-stack developer with a strong foundation in both front-end and back-end technologies.I enjoy creating efficient,scalable,and user-friendly web applications with expreience in various programming languages and frameworks</p>
+            <p>Over the years,I've worked on numerous projects ranging from simple websites to complex applications.I take pride in writing clean and maintainable code continuously learning new technologies to stay updated with the latest industry trends.</p>
+            <p></p>
+            </div>
+            <div class="box">
+                <img src="t shirt 1.jpg" class="back-img">
+                <img src="t shirt3.jpg" class="main-img">
+            </div>
+        </article>
+    </main>
+<footer>
+    <script>
+        function menu()
+        {
+           const menu =document.querySelector('.sidebar') 
+           menu.style.display='flex'
+        }
+        function back()
+        {
+           const menu =document.querySelector('.sidebar') 
+           menu.style.display='none'
+        }
+       var dark=document.getElementById("dark");
+       dark.onclick=function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            dark.src="light.png";
+        }
+        else{
+            dark.src ="dark.png";
+        }
+       }
+       
+    </script>
+</footer>
+</body>
+</html>
+<!-- (document.body.style.backgroundColor="black") -->

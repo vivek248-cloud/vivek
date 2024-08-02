@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body align="center">
+  <img src="nature.jpg" id="img" height="100px" width="200px">
+  <br>
+  width:<input type="number" id="width" name="width">
+  <br>
+  <br>
+  height:<input type="number" id="height">
+  <br><br>
+  
+  <button onclick="change()">ok</button>
+  <button onclick="reset()">reset</button>
+  <input type="date">
+  <script>
+   
+    function change()
+    {
+        var img=document.getElementById("img");
+        var height=document.getElementById("height").value;
+        var width=document.getElementById("width").value;
+        
+        if(height=="" && width=="")
+        {
+            img.height=100;
+            img.width=200;
+        }
+        else
+        {
+            
+            img.width=width;
+            img.height=height;
+        }
+    }
+    function reset()
+    {
+        var img=document.getElementById("img");
+        
+        img.height=100;
+        img.width=200;
+        
+    }
+  </script>
+</body>
+</html>

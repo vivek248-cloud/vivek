@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* body{
+        transition: background-color 1.5s ease;
+        
+      } */
+    </style>
+</head>
+<body id="change">
+    <form id="signupForm">
+        <div  >
+          <label for="name" >username:</label>
+          <input type="text" class="form-control" id="name" name="name" ><br><br>
+          <label for="name">password:</label>
+          <input type="password" class="form-control" id="password" password="password" >
+        </div>
+        <button value="submit"  onclick="c()">submit</button>
+        <button onclick="change()">change</button>
+        <p id="err"></p>
+  </form>
+  <script>
+    function c()
+    {
+      var name=document.getElementById("name").value;
+      var password=document.getElementById("password").value;
+      var err=document.getElementById("err")
+    
+     if(name==="" && password==="")
+     {
+      err.innerHTML="please fill the reqired feilds"
+      alert("please fill the reqired feilds")
+     }
+     else{
+      err.innerHTML="success"
+      alert("sucessfull")
+     }
+    }
+   
+    function change()
+    {
+      
+        var change=document.getElementById("change")
+        change.style.backgroundColor="red"
+      
+    }
+  </script>
+</body>
+</html>
+
+<!-- changing the h1 name by clicking the buttons task
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="output">hello</h1>
+  <button onclick="change(event)">jarshan</button>
+  <button onclick="change(event)">asath</button>
+  <button onclick="change(event)">aswin</button>
+  <script>
+    var h1=document.getElementById("output")
+    function change(event)
+    {
+      h1.textContent=event.target.textContent
+      h1.style.color="Red"
+      h1.style.fontSize="10cm"
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(237, 8, 8);
+    }
+    h1{
+      font-family:cursive;
+      cursor:crosshair;
+    }
+  </style>
+</head>
+<body align="center">
+  <h1 onclick="del()" id="1">jarshan</h1>
+  <h1 onclick="del(event)" class="2">asath</h1>
+  <h1 onclick="del(event)" class="3">aswin</h1>
+  <h1 onclick="del(event)" class="4">deepak</h1>
+  <h1 onclick="del(event)" class="5">diya</h1>
+  <h1 onclick="del(event)" class="6">vivek</h1>
+  <script>
+    var h1=document.getElementsByid("1")
+    function del()
+    {
+        event.target.remove()
+          }
+  </script>
+</body>
+</html> -->

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .b{
+            /* filter: blur(15px); */
+            /* background-color: rgb(233, 215, 215); */
+            /* background-image:url(download.jpg); */
+            
+            
+            /* filter: blur(20px);
+            } */
+        button{
+            background-color:rgb(238, 236, 240);
+            color: rgb(0, 0, 0);
+            border-radius: 15px;
+            margin-left:17dvw;
+            margin-top: 5dvh;
+            height: 50px;
+            width:80px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* box-shadow:orange 2px 5px 6px; */
+        }
+        button:hover{
+            background-color:rgb(124, 84, 255);
+            box-shadow:orange 2px 5px 20px;
+        }
+        button:active{
+            box-shadow:rgb(76, 33, 119) 2px 5px 20px;
+            transform: translatey(10px);
+        }
+        .container{
+            background-color: blueviolet;
+            /* background-image:url(download.jpg); */
+            border-radius: 17px;
+            height: 50dvh;
+            width: 50dvw;
+            margin-left: 25dvw;
+        }
+        label{
+            color: rgb(0, 0, 0);
+            font-size:xx-large;    
+            margin: 20px;
+        }
+        h2{
+            font-size: xx-large;
+            color: rgb(0, 0, 0);
+            margin-left: 20dvw;
+        }
+         /* #signupForm{
+             height: 10dvh;
+            width: 10dvw; 
+        }  */
+        .form-control{
+            margin-left: 10px;
+            height: 28px;
+            width:40%
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="b">
+    
+    <div class="container">
+        <h2>Login</h2>
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="name" >username:</label>
+            <input type="text" class="form-control" id="name" name="name" ><br><br>
+            <label for="name">password:</label>
+        <input type="password" class="form-control" id="password" password="password" >
+        
+      </div>
+    </form>
+      <div>
+        <br><br> <button value="submit"  onclick="c()">submit</button></div>
+      <p class="err"></p></div>
+<script>
+    var a=(document.getElementById("name").Value)
+    var b=document.getElementById("password")
+    var e=document.getElementById("err")
+    function c()
+    {
+            if (a=='')
+            {
+                err.innerHTML="fill"
+            }
+            else{
+                err.innerHTML="success"
+            }
+       
+    
+    }
+</script>
+    
+</body>
+</html>

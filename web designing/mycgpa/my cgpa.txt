@@ -1,0 +1,13 @@
+Semester 1 GPA: 4.00
+
+Semester 2 GPA: 2.55
+
+Semester 3 GPA: 2.63
+
+Semester 4 GPA: 2.50
+
+Semester 5 GPA: 3.28
+
+Semester 6 GPA: 3.74
+
+Your CGPA: 3.15

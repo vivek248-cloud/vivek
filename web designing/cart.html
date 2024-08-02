@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .body{
+        
+        background-image:linear-gradient( rgb(85, 89, 86), rgb(179, 194, 172),rgb(7, 7, 7));
+        background-attachment:fixed;
+        /* color: transparent; */
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:100%;
+        width:100%;
+      }
+      .div3:hover{
+        height: auto;
+        width: auto;
+      }
+     
+        .nav:hover a :not(:hover)
+        {
+          opacity: .7;
+          transform: scale(.85);
+          }
+        .div2{
+          padding-top: 50px;
+          bottom: 80%;
+          display:grid;
+          grid-template-columns: repeat(4, 1fr);
+          row-gap: 50px;
+          top: 0px;
+        
+        }
+        img{
+            width: 10em;
+            height: 12em;
+            border-radius: 8px;
+           
+        }
+        .h1div{
+            
+           color: rgb(38, 215, 215);
+            background-color: rgb(67, 64, 70);
+            position:fixed;
+            overflow: hidden;
+            bottom: 91.8%;
+            width:100vmax;
+            height: 40px;
+            left: 0px;
+            font-size: xx-large;
+          }
+        .nav{
+         
+          height: 50px;
+          width: fit-content;
+         position: fixed;
+          bottom: 94.5%;
+          display: inline-flex;
+          z-index: 1;
+          width:40%;
+          right: 0px;
+        }
+        button{
+          background-color: transparent;
+          color: white;
+          border-radius: 19px;
+          font-size: large;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          border: none;
+        }
+        button:active{
+            color: aliceblue;
+            box-shadow: 3px,3px,3px;
+            transition-duration: 0.2s;
+            transform: translateY(4px)
+          }
+        :hover button{
+            cursor:pointer;
+        }
+        a{
+          text-decoration:none;
+          color: rgb(0, 0, 0);
+        }
+        a:hover{
+          transform: scale(0,58);
+          color: red;
+        }
+        img:hover
+        {
+          width: 10em;
+            height: 12em;
+           box-shadow: 0 5px 10px 0 rgb(74, 66, 66),0 6px 20px 0 rgb(8, 8, 8);
+            overflow: hidden;
+            opacity: 1;
+        } 
+    </style>
+</head>
+<body>
+    <h1 align="center" class="h1div">AMZCART</h1>
+    <div align="center" class="div1">
+    <div class="nav" align="center">
+      <ul><a href="product page.html"><button class="b4">PRODUCT</button></a></ul>
+      <ul> <a href="cart.html"><button class="b1">CART</button></a></ul>
+      <ul><a href="#"><button class="b2">HOME</button></a></ul>
+      <ul><a href="#"><button class="b3">ACCOUNT</button></a></ul>
+    </div>
+    <div class="body">
+    <div><img src="" alt=""><br>price:$10 <br><a href="#">buy now</a></div>
+    <div><img src="" alt=""><br>price:$10 <br><a href="#">buy now</a></div>
+    <div><img src="" alt=""><br>price:$10 <br><a href="#">buy now</a></div>
+    <div><img src="" alt=""><br>price:$10 <br><a href="#">buy now</a></div>
+    </div>
+  </div>
+</body>
+</html>
